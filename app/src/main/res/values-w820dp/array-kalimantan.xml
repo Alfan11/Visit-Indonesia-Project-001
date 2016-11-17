@@ -52,7 +52,7 @@
 		barat daya provinsi Kalimantan Tengah.</item>
 		
         <item> Pasar terapung muara kuin terletak di Banjarmasin. pasar terapung tradisional yang berada di atas sungai Barito di muara 
-		sungai Kuin, Banjarmasin, Kalimantan Selatan.[1] Pasar Terapung Muara Kuin merupakan pusaka saujana Kota Banjarmasin.
+		sungai Kuin, Banjarmasin, Kalimantan Selatan.Pasar Terapung Muara Kuin merupakan pusaka saujana Kota Banjarmasin.
 		Para pedagang dan pembeli menggunakan jukung, sebutan perahu dalam bahasa Banjar. Pasar ini mulai setelah salat Subuh sampai 
 		selepas pukul tujuh pagi. Matahari terbit memantulkan cahaya di antara transaksi sayur-mayur dan hasil kebun dari kampung-kampung 
 		sepanjang aliran sungai Barito dan anak-anak sungainya.</item>
@@ -92,6 +92,19 @@
 		<item>Kecamatan Loksado adalah sebuah kecamatan di Kabupaten Hulu Sungai Selatan, Kalimantan Selatan, Indonesia. Loksado 
 		terletak di pegunungan Meratus merupakan salah satu daerah wisata alam dan atraksi budaya masyarakat Dayak Bukit.
 		Penginapan terkenal yakni Hotel Wisma Duta, Hotel Rakat Mufakat, Amandit Resort.</item>
+    </string-array>
+    <string-array name="place_locations">
+        <item> Kapuas Hulu, Kalimantan Barat</item>
+        <item>Pelabuhan Semayang, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur</item>
+        <item>Kecamatan Hanau, Danau Sembuluh, dan Seruyan Hilir di Kabupaten Seruyan, KalTeng</item>
+        <item>Banjarmasin</item>
+        <item>Kecamatan Samboja, Kabupaten Kutai Kartanegara,
+		Kalimantan Timur</item>
+        <item>kecamatan Alalak, Kabupaten Barito Kuala, provinsi Kalimantan Selatan</item>
+        <item>Selat Makassar timur bagian Pulau Kalimantan</item>
+        <item>Kalimantan Barat</item>
+        <item> Kalimantan (Borneo) Timur</item>
+        <item>Kabupaten Hulu Sungai Selatan, Kalimantan Selatan</item>
     </string-array>
     <array name="places_picture">
         <item>@drawable/a</item>

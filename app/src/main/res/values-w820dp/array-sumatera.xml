@@ -86,8 +86,8 @@
 		</item>
 		
 		<item>
-		Taman nasional bukit barisan adalh sebuah taman nasional yang ditujukan untuk melindungi hutan hujan tropispulau Sumatra beserta kekayaan alam hayati yang dimilikinya. 
-		UNESCO menjadikan Taman Nasional Bukit Barisan Selatan sebagai Warisan Dunia[1]. Bukit Barisan Selatan dinyatakan sebagai Cagar Alam 
+		Taman nasional bukit barisan adalah sebuah taman nasional yang ditujukan untuk melindungi hutan hujan tropis pulau Sumatra beserta kekayaan alam hayati yang dimilikinya.
+		UNESCO menjadikan Taman Nasional Bukit Barisan Selatan sebagai Warisan Dunia. Bukit Barisan Selatan dinyatakan sebagai Cagar Alam
 		Suaka Margasatwa pada tahun 1935 dan menjadi Taman Nasional pada tahun 1982. Pada awalnya ukuran taman adalah seluas 356.800 hektare . 
 		Tetapi luas taman saat ini yang dihitung dengan menggunakan GIS kurang-lebih sebesar 324.000 Ha.
 		</item>
@@ -112,6 +112,20 @@
 		kelapa, dan ini tidak dijumpai di Pantai Panjang. Penginapan terkenal Nala sea side hotel,Amaris hotel Bengkulu,pasir putih resort.
 		</item>
     </string-array>
+	<string-array name="place_locations">
+		<item> kecamatan Tanjung Raya, Kabupaten Agam, provinsi Sumatera Barat</item>
+		<item>kota Payakumbuh di kabupaten Limapuluh Koto, provinsi Sumatera Barat</item>
+		<item>Sungai Kampar</item>
+		<item>Desa Karang Dalam, Kecamatan Pulau Pinang, Kabupaten Lahat,
+		Sumatera Selatan</item>
+		<item>Gunung Sibayak</item>
+		<item>Provinsi Sumatera
+		Utara</item>
+		<item>Taman Nasional Bukit Barisan</item>
+		<item>Desa Selat Baru</item>
+		<item> Pantai Batu Bertupang </item>
+		<item>Kotamadya Bengkulu, Propinsi Bengkulu</item>
+	</string-array>
     <array name="places_picture">
         <item>@drawable/a</item>
         <item>@drawable/b</item>

@@ -90,6 +90,18 @@
 		Selat Makassar di sebelah barat, Kabupaten Kepulauan Pangkajene di sebelah utara, Kabupaten Marosdi sebelah timur dan Kabupaten 
 		Gowa di sebelah selatan.</item>
     </string-array>
+    <string-array name="place_locations">
+        <item> selatan kabupaten Donggala dan bagian barat kabupaten Poso</item>
+        <item>Provinsi Sulawesi Selatan</item>
+        <item>Kabupaten Poso, Sulawesi Tengah</item>
+        <item>Kepulauan Togean</item>
+        <item>kecamatan di Kabupaten Minahasa</item>
+        <item>kota bintung, sulawesi utara</item>
+        <item>Teluk Manado</item>
+        <item>Kota Manado</item>
+        <item> propinsi sulawesi tenggara </item>
+        <item>Kota Makassar</item>
+    </string-array>
     <array name="places_picture">
         <item>@drawable/a</item>
         <item>@drawable/b</item>
