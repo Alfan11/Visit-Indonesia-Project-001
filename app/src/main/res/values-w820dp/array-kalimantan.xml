@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2016 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string-array name="places">
+        <item>Danau Sentarum</item>
+        <item>Pantai Melawai</item>
+        <item>Tanjung Puting</item>
+        <item>Pasar Terapung Muara Kuin </item>
+        <item>Jembatan Tajuk di Bukit Bangkirai</item>
+        <item>Pulau Kembang</item>
+        <item>Pulau Beras Basah</item>
+        <item>Bukit Kelam</item>
+        <item>Sungai Mahakam</item>
+        <item>Kecamatan Lokasado</item>
+    </string-array>
+    <string-array name="place_desc">
+        <item>Danau</item>
+        <item>Pantai</item>
+        <item>Pantai</item>
+        <item>Pasar</item>
+        <item>Jembatan</item>
+        <item>Pulau</item>
+        <item>Pulau</item>
+        <item>Bukit</item>
+        <item>Sungai</item>
+        <item>Kecamatan</item>
+    </string-array>
+    <string-array name="place_details">
+        <item> Danau Sentarum terletak di Kapuas Hulu, Kalimantan Barat Danau ini dipenuhi air selama 10 bulan setiap tahunnya, dan sisanya 
+		akan surut, membentuk kolam-kolam kecil yang berisi ikan-ikan kecil. Saat kemarau, Air Danau Sentarum memasok setengah dari aliran
+		air Sungai Kapuas. Luas keseluruhan danau ini 132.000 hektarePenginapan Permata Bunda, Penginapan Aman Sentosa, Penginapan Marisa
+		</item>
+
+        <item> Pantai Melawai terletak di Jl. Pelabuhan Semayang, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur.Waktu yang tepat untuk 
+		mengunjungi salah satu tempat wisata di Balikpapan ini adalah saat sore hari menjelang malam. Pada saat itu, penjual makanan sudah ramai menggelar dagangannya. Anda bisa menikmati pemandangan matahari terbenam sambil bersantai menikmati makanan Anda dengan duduk lesehan di atas tikar yang telah disiapkan 
+		Bintang Hotel Balikpapan , Sentosa Guest House , Fortuna Guest House.</item>
+        
+		<item>Kecamatan Hanau, Danau Sembuluh, dan Seruyan Hilir di Kabupaten Seruyan sebuah taman nasional yang terletak di semenanjung 
+		barat daya provinsi Kalimantan Tengah.</item>
+		
+        <item> Pasar terapung muara kuin terletak di Banjarmasin. pasar terapung tradisional yang berada di atas sungai Barito di muara 
+		sungai Kuin, Banjarmasin, Kalimantan Selatan.[1] Pasar Terapung Muara Kuin merupakan pusaka saujana Kota Banjarmasin.
+		Para pedagang dan pembeli menggunakan jukung, sebutan perahu dalam bahasa Banjar. Pasar ini mulai setelah salat Subuh sampai 
+		selepas pukul tujuh pagi. Matahari terbit memantulkan cahaya di antara transaksi sayur-mayur dan hasil kebun dari kampung-kampung 
+		sepanjang aliran sungai Barito dan anak-anak sungainya.</item>
+		
+        <item> Jembatan Tajuk di Bukit Bangkirai. Kawasan wisata ini terletak di Kecamatan Samboja, Kabupaten Kutai Kartanegara,
+		Kalimantan Timur. Bukit Bangkirai dapat ditempuh melalui perjalanan darat selama 1,5 jam dari Kota Balikpapan.
+		Wisata ini menawarkan pesona hutan hujan tropis yang masih alami, yang dilengkapi dengan sarana dan prasarana wisata seperti restoran,
+		lamin untuk pertemuan, kolam renang, serta cottage maupun jungle cabin. Di kawasan ini terdapat canopy bridge (jembatan tajuk)
+		sepanjang 64 m yang digantung menghubungkan 5 pohon Bangkirai di ketinggian 30 m. Jembatan tajuk ini merupakan yang pertama di
+		Indonesia, kedua di Asia dan yang kedelapan di dunia</item>
+		
+        <item> Pulau Kembang terletak di kecamatan Alalak, Kabupaten Barito Kuala, provinsi Kalimantan Selatan .
+		Pulau Kembang ditetapkan sebagai hutan wisata berdasarkan SK. Menteri Pertanian No. 788/Kptsum12/1976 dengan luas 60 Ha. 
+		Di dalam kawasan hutan wisata ini terdapat altar yang diperuntukkan sebagai tempat meletakkan sesaji bagi " penjaga" pulau
+		Kembang yang dilambangkan dengan dua buah arca berwujud kera berwarna putih (Hanoman), oleh masyarakat dari etnis Tionghoa-
+		Indonesiayang mempunyai kaul atau nazar tertentu. Seekor kambing jantan yang tanduknya dilapisi emas biasanya dilepaskan ke 
+		dalam hutan pulau Kembang apabila sebuah permohonan berhasil atau terkabul.</item>
+		
+		<item> Pulau Beras Basah merupakan sebuah pulau kecil yang berlokasi di Selat Makassar timur bagian Pulau Kalimantan.
+		Secara administrasi, pulau ini berada di bawah pemerintah Kota Bontang, Provinsi Kalimantan Timur. Pulau ini sekarang 
+		menjadi tujuan wisata dan para penyelam yang tertarik akan keindahan pemandangan bawah lautnya.</item>
+		
+		<item> Bukit Kelam adalah gunung yang terletak di Kalimantan Barat. Gunung ini memiliki tanaman endemik kantong semar dari
+		spesies Nepenthes clipeata.Gunung Kelam membentang dari barat ke timur dengan ketinggian 1.002 mdpl merupakan sebongkah
+		batu raksasa (monolit). Tempat ini terletak 20 km dari kota Sintang dan sekitar 395 km dari Pontianak ibukota Kalimantan 
+		Barat. Kawasan Gunung Kelam berada di wilayah Kecamatan Kelam Permai kab. Sintang Kalimantan Barat. Tepatnya di Hutan wisata 
+		Bukit Kelam. Bukit Kelam berada di antara dua sungai besar yaitu Sungai Melawi dan Sungai Kapuas.
+		Masyarakat di Kalimantan menyebut Gunung Kelam sebagai Bukit Kelam karena secara umum masyarakat setempat menyebut gunung sebagai
+		"bukit raya". Untuk pendakian mencapai puncak dibutuhkan waktu 4-5 jam untuk naik dan 3-4 jam untuk turun.</item>
+		
+		<item>Sungai Mahakam merupakan sungai terbesar yang membelah provinsi Kalimantan (Borneo) Timur. Alur sungai ini, 
+		sebagian besar mengitari wilayah Kabupaten Kutai Kartanegara, Kabupaten Kutai Barat, dan Kota Samarinda. Bagian hulu
+		sungai ini melintasi Kabupaten Kutai Barat, sementara bagian hilirnya melintasi Kabupaten Kutai Kartanegara dan Kota Samarinda.
+		Sungai Mahakam bisa dikatakan menjadi jantung kehidupan bagi sebagian besar masyarakat Kalimantan (Borneo) Timur.
+		Penginapan terkenal yakni Harris hotel samarinda, swiss bel-hotel borneo samarinda, aston samarinda hotel</item>
+		
+		<item>Kecamatan Loksado adalah sebuah kecamatan di Kabupaten Hulu Sungai Selatan, Kalimantan Selatan, Indonesia. Loksado 
+		terletak di pegunungan Meratus merupakan salah satu daerah wisata alam dan atraksi budaya masyarakat Dayak Bukit.
+		Penginapan terkenal yakni Hotel Wisma Duta, Hotel Rakat Mufakat, Amandit Resort.</item>
+    </string-array>
+    <array name="places_picture">
+        <item>@drawable/a</item>
+        <item>@drawable/b</item>
+        <item>@drawable/c</item>
+        <item>@drawable/d</item>
+        <item>@drawable/e</item>
+        <item>@drawable/f</item>
+    </array>
+</resources>
