@@ -17,7 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".SumatraActivity" />
-        <activity android:name=".KalimantanActivity"></activity>
+        <activity android:name=".KalimantanActivity" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
