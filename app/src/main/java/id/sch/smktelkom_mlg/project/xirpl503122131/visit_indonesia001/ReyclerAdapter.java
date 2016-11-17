@@ -30,6 +30,10 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
                 Intent intent = new Intent(context, SumatraActivity.class);
                 context.startActivity(intent);
             }
+            if (position == 1 && position < getItemCount()) {
+                Intent intent = new Intent(context, KalimantanActivity.class);
+                context.startActivity(intent);
+            }
         }
     };
 
