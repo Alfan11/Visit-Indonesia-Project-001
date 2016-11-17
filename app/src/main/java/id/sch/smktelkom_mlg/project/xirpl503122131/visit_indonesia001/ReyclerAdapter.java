@@ -16,7 +16,7 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
     String[] name = {"Sumatra", "Kalimantan", "Sulawesi", "Jawa",
             "Papua"};
     String[] desc = {"20 Wisata", "10 Wisata", "11 Wisata", "10 Wisata", "10 Wisata"};
-    String[] img = {"@drawable/a1", "@drawable/a2", "@drawable/a3", "@drawable/a4", "@drawable/a5"};
+    int[] img = {R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a4, R.drawable.a5};
     // menampilkan list item dalam bentuk text dengan tipe data string dengan variable name
 
     LayoutInflater inflater;
@@ -27,11 +27,7 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
             RecyclerViewHolder vholder = (RecyclerViewHolder) v.getTag();
             int position = vholder.getPosition();
             if (position == 0 && position < getItemCount()) {
-                Intent intent = new Intent(context, ActivitySumatra.class);
-                context.startActivity(intent);
-            }
-            if (position == 1 && position < getItemCount()) {
-                Intent intent = new Intent(context, KalimantanActivity.class);
+                Intent intent = new Intent(context, SumatraActivity.class);
                 context.startActivity(intent);
             }
         }
@@ -51,14 +47,13 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
-
         holder.tv1.setText(name[position]);
         holder.tv1.setOnClickListener(clickListener);
         holder.tv1.setTag(holder);
         holder.tv2.setText(desc[position]);
         holder.imageView.setOnClickListener(clickListener);
         holder.imageView.setTag(holder);
-
+        holder.imageView.setImageResource(img[position]);
     }
 
     @Override
