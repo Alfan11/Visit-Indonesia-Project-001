@@ -13,8 +13,7 @@
         <item>Tugu Macarthur</item>
     </string-array>
     <string-array name="place_desc">
-        <item>Taman Nasional
-        </item>
+        <item>Taman Nasional</item>
         <item>Kepulauan</item>
         <item>Danau</item>
         <item>Danau</item>
@@ -97,11 +96,11 @@
         <item>Papua</item>
     </string-array>
     <array name="places_picture">
-        <item>@drawable/a</item>
-        <item>@drawable/b</item>
-        <item>@drawable/c</item>
-        <item>@drawable/d</item>
-        <item>@drawable/e</item>
-        <item>@drawable/f</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </array>
 </resources>

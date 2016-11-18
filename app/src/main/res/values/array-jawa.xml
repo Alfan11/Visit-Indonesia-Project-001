@@ -106,11 +106,11 @@
         <item>Jawa Barat</item>
     </string-array>
     <array name="places_picture">
-        <item>@drawable/a</item>
-        <item>@drawable/b</item>
-        <item>@drawable/c</item>
-        <item>@drawable/d</item>
-        <item>@drawable/e</item>
-        <item>@drawable/f</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </array>
 </resources>
