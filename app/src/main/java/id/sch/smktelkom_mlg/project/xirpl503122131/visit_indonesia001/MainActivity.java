@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setTitle("Visit Indonesia");
+        setTitle("Visit Indonesia (Beta Test)");
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         //menampilkan reyclerview yang ada pada file layout dengan id reycler view
