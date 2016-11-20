@@ -22,7 +22,9 @@
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SulawesiActivity"></activity>
+        <activity android:name=".SulawesiActivity" />
+        <activity android:name=".JawaActivity" />
+        <activity android:name=".PapuaActivity"></activity>
     </application>
 
 </manifest>
