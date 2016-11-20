@@ -159,10 +159,120 @@
     <string name="j4">Pangandaran</string>
     <string name="j5">Kep. Seribu</string>
 
+    <string name="jd1">
+        Karimunjawa adalah kepulauan di Laut Jawa yang termasuk dalam Kabupaten Jepara,
+		Jawa Tengah. Dengan luas daratan ±1.500 hektare dan perairan ±110.000 hektare,
+		Karimunjawa kini dikembangkan menjadi pesona wisata
+		Taman Laut yang mulai banyak digemari wisatawan lokal maupun mancanegara.
+    </string>
+
+    <string name="jd2">
+        Borobudur adalah salah satu dari keajaiban dunia. candi satu ini sangat
+		banyak dikunjungi oleh wisatawan. Candi ini banyak meyimpan cerit - cerita sejarah jaman dahulu.
+    </string>
+
+    <string name="jd3">
+        Kawah Ijen adalah sebuah danau kawah yang bersifat asam yang berada di puncak
+		Gunung Ijen dengan tinggi 2.443 meter di atas permukaan laut dengan kedalaman danau
+		200 meter dan luas kawah mencapai 5.466 Hektar. Danau kawah Ijen dikenal merupakan
+		danau air sangat asam terbesar di dunia. Kawah Ijen berada dalam wilayah Cagar Alam
+		Taman Wisata Ijen Kabupaten Bondowoso dan Kabupaten Banyuwangi, Jawa Timur. Setiap
+		dini hari sekitar pukul 02.00 hingga 04.00, di sekitar kawah dapat dijumpai fenomena
+		blue fire atau api biru, yang merupakan keunikan tempat ini, karena pemandangan
+		alami ini hanya terjadi di dua tempat di dunia yaitu Islandia dan Ijen. Dari Kawah
+		Ijen, kita dapat melihat pemandangan gunung lain yang ada di kompleks Pegunungan Ijen,
+		di antaranya adalah puncak Gunung Merapi yang berada di timur Kawah Ijen,
+		Gunung Raung, Gunung Suket, Gunung Rante, dan sebagainya.
+    </string>
+
+    <string name="jd4">
+        Pantai Pangandaran merupakan sebuah objek wisata andalan Kabupaten
+		Pangandaran (pemekaran dari Kabupaten Ciamis) yang terletak di sebelah tenggara
+		Jawa Barat, tepatnya di Desa Pangandaran, Kecamatan Pangandaran, Kabupaten Pangandaran,
+		Provinsi Jawa Barat.
+		Pantai ini dinobatkan sebagai pantai terbaik di Pulau Jawa menurut AsiaRooms
+    </string>
+
+    <string name="jd5">
+        Kepulauan Seribu merupakan gugusan kepulauan yang terletak di sebelah utara Jakarta, tepat berhadapan
+        dengan teluk Jakarta. Namanya Kepulauan Seribu bukan berarti pulau-pulau di dalam gugusan kepualaun
+        itu berjumlah seribu. Jumlah pulau itu hanya sekitar 342 pulau, termasuk pulau-pulau pasir dan terumbu
+        karang yang bervegetasi maupun yang tidak. Pulau pasir dan terumbu karang itu sendiri berjumlah 158.
+        Tidak semua pulau yang termasuk di dalam gugusan Kepulauan Seribu didiami manusia. Sebagaimana banyak
+        pulau-pulau lainnya di Indonesia, sebagian besar pulau di Kepulauan Seribu tidak berpenghuni. Gugusan
+        Kepulauan Seribu memiliki potensi yang tidak kecil untuk pengembangan berbagai macam industri, antara lain
+        pertambangan, perikanan serta yang paling utama ialah pariwisata.
+    </string>
+
+    <string name="jl1">Kabupaten Jepara, Jawa Tengah</string>
+    <string name="jl2">
+        Borobudur adalah sebuah candi Buddha yang terletak di Borobudur,
+        Magelang, Jawa Tengah, Indonesia. Lokasi candi adalah kurang
+        lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat
+        Surakarta, dan 40 km di sebelah barat laut Yogyakarta
+    </string>
+    <string name="jl3">
+        Gunung Ijen adalah sebuah gunung berapi aktif yang terletak di
+        perbatasan antara Kabupaten Banyuwangi dan Kabupaten Bondowoso,
+        Jawa Timur,Indonesia. Gunung ini memiliki ketinggian 2.443 mdpl
+        dan terletak berdampingan dengan Gunung Merapi
+    </string>
+    <string name="jl4">Desa Pangandaran, Kecamatan Pangandaran, Kabupaten Pangandaran, Provinsi Jawa Barat</string>
+    <string name="jl5">Wilayahnya meliputi gugusan kepulauan berjumlah ± 110 Pulau dan banyak sekali Gosong Karang.</string>
+
     <!--PAPUA-->
     <string name="p1">Teluk Cendrawasih</string>
     <string name="p2">Raja Ampat</string>
     <string name="p3">Danau Sentani</string>
     <string name="p4">Lembah Baliem</string>
     <string name="p5">Pantai Bosnik</string>
+
+    <string name="pd1">
+        Taman Nasional Teluk Cenderawasih merupakan taman nasional perairan laut
+		terluas di Indonesia, terdiri dari daratan dan pesisir pantai (0,9%),
+		daratan pulau-pulau (3,8%), terumbu karang (5,5%), dan perairan lautan (89,8%).
+    </string>
+
+    <string name="pd2">
+        Kepulauan Raja Ampat merupakan rangkaian empat gugusan pulau yang
+		berdekatan dan berlokasi di barat bagian Kepala Burung (Vogelkoop) Pulau Papua.
+		Secara administrasi, gugusan ini berada di bawah Kabupaten Raja Ampat, Provinsi
+		Papua Barat. Kepulauan ini sekarang menjadi tujuan para penyelam yang tertarik
+		akan keindahan pemandangan bawah lautnya. Empat gugusan pulau yang menjadi
+		anggotanya dinamakan menurut empat pulau
+		terbesarnya, yaitu Pulau Waigeo, Pulau Misool, Pulau Salawati, dan Pulau Batanta.
+    </string>
+
+    <string name="pd3">
+        Danau ini sudah dikelola menjadi objek wisata karena berjarak 50 kilometer
+		dari Jayapura dan mudah dijangkau, sebagai pelengkap
+		di danau ini sudah banyak terdapat perahu wisata untuk berkeliling
+		di Danau Sentani.
+    </string>
+
+    <string name="pd4">
+        Lembah Baliem merupakan lembah di pegunungan Jayawijaya. Lembah Baliem berada
+		di ketinggian 1600 meter dari permukaan laut yang dikelilingi pegunungan dengan
+		pemandangannya yang
+		indah dan masih alami. Suhu bisa mencapai 10-15 derajat celcius pada waktu malam.
+    </string>
+
+    <string name="pd5">
+        Pantai bosnik menjadi primadona warga Biak sebagai obyek wisata setiap akhir
+		pekan dikarenakan letak pantai yang tidak begitu jauh dari kotan dan juga
+		transportasi ke pantai tersebut mudah bisa menggunakan Ojek ataupun Angkutan
+		Kampung. Bagi wisatawan luar yang ingin ke ke Pantai bosnik jangan takut.
+		Wisatawan dari Jakarta dapat menggunakan pesawat tujuan Biak. Biasanya pesawat
+		dari Jakarta transit ke Makasar kemudian lanjut ke Biak. Jangan takut untuk
+		penginapan di Biak sudah banyak tersedia. Selain Pantai bosnik masih banyak pesona
+		pantai yang disajikan Biak untuk para wisatawan seperti
+		pantai Sabah, Adoki, Yendidori, Barito, Waterbasis, Parai dan Wisata Taman Burung.
+    </string>
+
+    <string name="pl1">Papua Barat</string>
+    <string name="pl2">Kabupaten Raja Ampat, Provinsi Papua Barat</string>
+    <string name="pl3">Antara Kota Jayapura dan Kabupaten Jayapura, Papua</string>
+    <string name="pl4">Papua</string>
+    <string name="pl5">Biak</string>
+
 </resources>
