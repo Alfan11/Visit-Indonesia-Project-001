@@ -33,5 +33,19 @@ public class JawaActivity extends AppCompatActivity {
                 startActivity(new Intent(JawaActivity.this, DetailActivity.class));
             }
         });
+
+        btj2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(JawaActivity.this, DetailActivity.class));
+            }
+        });
+
+        btj3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(JawaActivity.this, DetailActivity.class));
+            }
+        });
     }
 }

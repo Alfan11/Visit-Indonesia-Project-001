@@ -33,5 +33,33 @@ public class PapuaActivity extends AppCompatActivity {
                 startActivity(new Intent(PapuaActivity.this, DetailActivity.class));
             }
         });
+
+        btp2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PapuaActivity.this, DetailActivity.class));
+            }
+        });
+
+        btp3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PapuaActivity.this, DetailActivity.class));
+            }
+        });
+
+        btp4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PapuaActivity.this, DetailActivity.class));
+            }
+        });
+
+        btp5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PapuaActivity.this, DetailActivity.class));
+            }
+        });
     }
 }

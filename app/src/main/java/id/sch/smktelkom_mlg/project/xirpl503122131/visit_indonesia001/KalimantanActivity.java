@@ -1,7 +1,9 @@
 package id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 
 public class KalimantanActivity extends AppCompatActivity {
@@ -25,5 +27,33 @@ public class KalimantanActivity extends AppCompatActivity {
         btk8 = (Button) findViewById(R.id.buttonK8);
         btk9 = (Button) findViewById(R.id.buttonK9);
         btk10 = (Button) findViewById(R.id.buttonK10);
+
+        btk1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(KalimantanActivity.this, DetailActivity.class));
+            }
+        });
+
+        btk2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(KalimantanActivity.this, DetailActivity.class));
+            }
+        });
+
+        btk3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(KalimantanActivity.this, DetailActivity.class));
+            }
+        });
+
+        btk4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(KalimantanActivity.this, DetailActivity.class));
+            }
+        });
     }
 }

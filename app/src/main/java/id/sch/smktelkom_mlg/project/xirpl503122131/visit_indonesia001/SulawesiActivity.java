@@ -33,5 +33,26 @@ public class SulawesiActivity extends AppCompatActivity {
                 startActivity(new Intent(SulawesiActivity.this, DetailActivity.class));
             }
         });
+
+        btu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SulawesiActivity.this, DetailActivity.class));
+            }
+        });
+
+        btu3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SulawesiActivity.this, DetailActivity.class));
+            }
+        });
+
+        btu4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SulawesiActivity.this, DetailActivity.class));
+            }
+        });
     }
 }
