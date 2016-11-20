@@ -99,5 +99,6 @@ public class PapuaActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
