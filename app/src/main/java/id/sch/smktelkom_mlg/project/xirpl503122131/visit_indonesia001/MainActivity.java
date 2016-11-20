@@ -27,7 +27,5 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         //menset layoutmanager dan menampilkan daftar/list
         //dalam bentuk linearlayoutmanager pada class saat ini
-
-
     }
 }

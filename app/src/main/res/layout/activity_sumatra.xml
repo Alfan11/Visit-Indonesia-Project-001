@@ -75,7 +75,7 @@
             android:id="@+id/buttonS9"
             android:layout_width="match_parent"
             android:layout_height="175dp"
-            android:background="@drawable/s5"
+            android:background="@drawable/s9"
             android:contentDescription="@string/s9" />
 
         <TextView

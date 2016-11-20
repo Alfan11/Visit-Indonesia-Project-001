@@ -28,10 +28,10 @@ public class SumatraActivity extends AppCompatActivity {
         bts1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int[] img = {R.drawable.s1};
-                String title = "Danau Maninjau";
-                String desc = "Test deskripsi asld;flasdhfladsf";
-                String loc = "adfadsfadsfasdfadsf";
+                int imageResource = R.drawable.s1;
+                String title = getResources().getString(R.string.s1);
+                String desc = getResources().getString(R.string.sd1);
+                String loc = getResources().getString(R.string.sl1);
 
                 Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
                 intent.putExtra(TITLE, title);
@@ -45,9 +45,9 @@ public class SumatraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int[] img = {R.drawable.s2};
-                String title = "Lembah Arau";
-                String desc = "Test deskripsi asld;flasdhfladsf";
-                String loc = "adfadsfadsfasdfadsf";
+                String title = getResources().getString(R.string.s2);
+                String desc = getResources().getString(R.string.sd2);
+                String loc = getResources().getString(R.string.sl2);
 
                 Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
                 intent.putExtra(TITLE, title);
@@ -61,9 +61,9 @@ public class SumatraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int[] img = {R.drawable.s5};
-                String title = "Gunung Sibayak";
-                String desc = "Test deskripsi asld;flasdhfladsf";
-                String loc = "adfadsfadsfasdfadsf";
+                String title = getResources().getString(R.string.s5);
+                String desc = getResources().getString(R.string.sd5);
+                String loc = getResources().getString(R.string.sl5);
 
                 Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
                 intent.putExtra(TITLE, title);
@@ -77,9 +77,9 @@ public class SumatraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int[] img = {R.drawable.s6};
-                String title = "Danau Toba";
-                String desc = "Test deskripsi asld;flasdhfladsf";
-                String loc = "adfadsfadsfasdfadsf";
+                String title = getResources().getString(R.string.s6);
+                String desc = getResources().getString(R.string.sd6);
+                String loc = getResources().getString(R.string.sl6);
 
                 Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
                 intent.putExtra(TITLE, title);
@@ -93,9 +93,9 @@ public class SumatraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int[] img = {R.drawable.s9};
-                String title = "Pantai Batu Batu Bertupang";
-                String desc = "Test deskripsi asld;flasdhfladsf";
-                String loc = "adfadsfadsfasdfadsf";
+                String title = getResources().getString(R.string.s9);
+                String desc = getResources().getString(R.string.sd9);
+                String loc = getResources().getString(R.string.sl9);
 
                 Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
                 intent.putExtra(TITLE, title);

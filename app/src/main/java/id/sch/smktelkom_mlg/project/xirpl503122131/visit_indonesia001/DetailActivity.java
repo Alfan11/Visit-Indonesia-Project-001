@@ -1,8 +1,8 @@
 package id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -24,6 +24,7 @@ public class DetailActivity extends AppCompatActivity {
         tvDetail = (TextView) findViewById(R.id.place_detail);
         tvLoc = (TextView) findViewById(R.id.place_location);
 
+        //SUMATRA
         String title = getIntent().getStringExtra(SumatraActivity.TITLE);
         String desc = getIntent().getStringExtra(SumatraActivity.DESC);
         String loc = getIntent().getStringExtra(SumatraActivity.LOC);
@@ -36,8 +37,7 @@ public class DetailActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Hello", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(DetailActivity.this, MainActivity.class));
             }
         });
 

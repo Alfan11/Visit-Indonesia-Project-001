@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class KalimantanActivity extends AppCompatActivity {
-
+    public static final String TITLE = "Title";
+    public static final String DESC = "Desc";
+    public static final String LOC = "Location";
     ImageButton btk1, btk2, btk3, btk4, btk5;
 
     @Override
@@ -26,28 +28,75 @@ public class KalimantanActivity extends AppCompatActivity {
         btk1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(KalimantanActivity.this, DetailActivity.class));
+                String title = getResources().getString(R.string.k1);
+                String desc = getResources().getString(R.string.kd1);
+                String loc = getResources().getString(R.string.kl1);
+
+                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
+                intent.putExtra(TITLE, title);
+                intent.putExtra(DESC, desc);
+                intent.putExtra(LOC, loc);
+                startActivity(intent);
             }
         });
 
         btk2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(KalimantanActivity.this, DetailActivity.class));
+                String title = getResources().getString(R.string.k2);
+                String desc = getResources().getString(R.string.kd2);
+                String loc = getResources().getString(R.string.kl2);
+
+                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
+                intent.putExtra(TITLE, title);
+                intent.putExtra(DESC, desc);
+                intent.putExtra(LOC, loc);
+                startActivity(intent);
             }
         });
 
         btk3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(KalimantanActivity.this, DetailActivity.class));
+                String title = getResources().getString(R.string.k3);
+                String desc = getResources().getString(R.string.kd3);
+                String loc = getResources().getString(R.string.kl3);
+
+                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
+                intent.putExtra(TITLE, title);
+                intent.putExtra(DESC, desc);
+                intent.putExtra(LOC, loc);
+                startActivity(intent);
             }
         });
 
         btk4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(KalimantanActivity.this, DetailActivity.class));
+                String title = getResources().getString(R.string.k4);
+                String desc = getResources().getString(R.string.kd4);
+                String loc = getResources().getString(R.string.kl4);
+
+                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
+                intent.putExtra(TITLE, title);
+                intent.putExtra(DESC, desc);
+                intent.putExtra(LOC, loc);
+                startActivity(intent);
+            }
+        });
+
+        btk5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String title = getResources().getString(R.string.k5);
+                String desc = getResources().getString(R.string.kd5);
+                String loc = getResources().getString(R.string.kl5);
+
+                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
+                intent.putExtra(TITLE, title);
+                intent.putExtra(DESC, desc);
+                intent.putExtra(LOC, loc);
+                startActivity(intent);
             }
         });
     }
