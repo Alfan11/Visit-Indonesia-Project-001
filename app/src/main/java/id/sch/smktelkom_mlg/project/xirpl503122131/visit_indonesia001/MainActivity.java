@@ -2,7 +2,7 @@ package id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setTitle("Visit Indonesia (Beta Test)");
+        setTitle("Visit Indonesia");
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         //menampilkan reyclerview yang ada pada file layout dengan id reycler view
@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         //menset nilai dari adapter
         recyclerView.setHasFixedSize(true);
         //menset setukuran
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
+        recyclerView.setLayoutManager(layoutManager);
         //menset layoutmanager dan menampilkan daftar/list
         //dalam bentuk linearlayoutmanager pada class saat ini
     }
