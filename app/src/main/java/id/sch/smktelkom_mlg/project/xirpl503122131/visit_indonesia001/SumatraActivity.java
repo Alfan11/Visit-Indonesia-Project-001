@@ -1,119 +1,91 @@
 package id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001;
 
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 
-public class SumatraActivity extends AppCompatActivity {
-    public static final String TITLE = "Title";
-    public static final String DESC = "Desc";
-    public static final String LOC = "Location";
-    ImageButton bts1, bts2, bts5, bts6, bts9;
+import java.util.ArrayList;
+
+import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.adapter.SumatraAdapter;
+import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.model.Sumatra;
+
+public class SumatraActivity extends AppCompatActivity implements SumatraAdapter.IHotelAdapter {
+    public static final String HOTEL = "hotel";
+    ArrayList<Sumatra> mList = new ArrayList<>();
+    SumatraAdapter mAdapter;
+    RecyclerView rvSumatra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sumatra);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setTitle("Sumatra");
+        rvSumatra = (RecyclerView) findViewById(R.id.recycler_view_sumatra);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        rvSumatra.setLayoutManager(layoutManager);
+        mAdapter = new SumatraAdapter(this, mList);
+        rvSumatra.setAdapter(mAdapter);
 
-        bts1 = (ImageButton) findViewById(R.id.buttonS1);
-        bts2 = (ImageButton) findViewById(R.id.buttonS2);
-        bts5 = (ImageButton) findViewById(R.id.buttonS5);
-        bts6 = (ImageButton) findViewById(R.id.buttonS6);
-        bts9 = (ImageButton) findViewById(R.id.buttonS9);
+        filData();
+    }
 
-        bts1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int imageResource = R.drawable.s1;
-                String title = getResources().getString(R.string.s1);
-                String desc = getResources().getString(R.string.sd1);
-                String loc = getResources().getString(R.string.sl1);
+    private void filData() {
+        Resources resources = getResources();
+        String[] arJudul = resources.getStringArray(R.array.places);
+        String[] arDeskripsi = resources.getStringArray(R.array.place_desc);
+        String[] arDetail = resources.getStringArray(R.array.place_details);
+        String[] arLokasi = resources.getStringArray(R.array.place_locations);
+        TypedArray a = resources.obtainTypedArray(R.array.places_picture);
+        String[] arFoto = new String[a.length()];
+        for (int i = 0; i < arFoto.length; i++) {
+            int id = a.getResourceId(i, 0);
+            arFoto[i] = ContentResolver.SCHEME_ANDROID_RESOURCE + "://"
+                    + resources.getResourcePackageName(id) + '/'
+                    + resources.getResourceTypeName(id) + '/'
+                    + resources.getResourceEntryName(id);
+        }
+        a.recycle();
 
-                Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
+        for (int i = 0; i < arJudul.length; i++) {
+            mList.add(new Sumatra(arJudul[i], arDeskripsi[i], arDetail[i],
+                    arLokasi[i], arFoto[i]));
+        }
+        mAdapter.notifyDataSetChanged();
+    }
 
-        bts2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int[] img = {R.drawable.s2};
-                String title = getResources().getString(R.string.s2);
-                String desc = getResources().getString(R.string.sd2);
-                String loc = getResources().getString(R.string.sl2);
-
-                Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
-
-        bts5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int[] img = {R.drawable.s5};
-                String title = getResources().getString(R.string.s5);
-                String desc = getResources().getString(R.string.sd5);
-                String loc = getResources().getString(R.string.sl5);
-
-                Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
-
-        bts6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int[] img = {R.drawable.s6};
-                String title = getResources().getString(R.string.s6);
-                String desc = getResources().getString(R.string.sd6);
-                String loc = getResources().getString(R.string.sl6);
-
-                Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
-
-        bts9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int[] img = {R.drawable.s9};
-                String title = getResources().getString(R.string.s9);
-                String desc = getResources().getString(R.string.sd9);
-                String loc = getResources().getString(R.string.sl9);
-
-                Intent intent = new Intent(SumatraActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            onBackPressed();
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
             return true;
         }
+
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void doClick(int pos) {
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(HOTEL, mList.get(pos));
+        startActivity(intent);
     }
 }

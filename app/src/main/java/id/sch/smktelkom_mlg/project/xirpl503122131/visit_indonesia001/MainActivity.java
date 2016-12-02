@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new FavFragment(), "Top 5");
+        adapter.addFragment(new FavFragment(), "Home");
         adapter.addFragment(new IslandFragment(), "Island");
         adapter.addFragment(new AboutFragment(), "About");
         viewPager.setAdapter(adapter);

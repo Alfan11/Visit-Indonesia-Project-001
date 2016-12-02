@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Deskripsi"
+            android:text="Description"
             android:textColor="?attr/colorAccent" />
 
         <TextView
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="Lokasi"
+            android:text="Location"
             android:textColor="?attr/colorAccent" />
 
         <TextView
@@ -44,5 +44,4 @@
             tools:text="Lokasi" />
 
     </LinearLayout>
-
 </android.support.v4.widget.NestedScrollView>
