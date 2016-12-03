@@ -12,32 +12,35 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.R;
-import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.model.Sumatra;
+import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.model.Sulawesi;
 
+/**
+ * Created by Rehan on 12/3/2016.
+ */
 
-public class SumatraAdapter extends RecyclerView.Adapter<SumatraAdapter.ViewHolder> {
-    ArrayList<Sumatra> hotelList;
+public class SulawesiAdapter extends RecyclerView.Adapter<SulawesiAdapter.ViewHolder> {
+    ArrayList<Sulawesi> hotelList;
 
     IHotelAdapter mIHotelAdapter;
 
-    public SumatraAdapter(Context context, ArrayList<Sumatra> hotelList) {
+    public SulawesiAdapter(Context context, ArrayList<Sulawesi> hotelList) {
         this.hotelList = hotelList;
         mIHotelAdapter = (IHotelAdapter) context;
     }
 
     @Override
-    public SumatraAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public SulawesiAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_sumatra, parent, false);
         ViewHolder vh = new ViewHolder(v);
         return vh;
     }
 
     @Override
-    public void onBindViewHolder(SumatraAdapter.ViewHolder holder, int position) {
-        Sumatra sumatra = hotelList.get(position);
-        holder.tvJudul.setText(sumatra.judul);
-        holder.tvDeskripsi.setText(sumatra.deskripsi);
-        holder.ivFoto.setImageURI(Uri.parse(sumatra.foto));
+    public void onBindViewHolder(SulawesiAdapter.ViewHolder holder, int position) {
+        Sulawesi sulawesi = hotelList.get(position);
+        holder.tvJudul.setText(sulawesi.judul);
+        holder.tvDeskripsi.setText(sulawesi.deskripsi);
+        holder.ivFoto.setImageURI(Uri.parse(sulawesi.foto));
 
     }
 

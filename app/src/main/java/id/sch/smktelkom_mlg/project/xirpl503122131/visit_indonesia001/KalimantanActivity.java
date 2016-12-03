@@ -1,106 +1,64 @@
 package id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001;
 
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 
-public class KalimantanActivity extends AppCompatActivity {
-    public static final String TITLE = "Title";
-    public static final String DESC = "Desc";
-    public static final String LOC = "Location";
-    ImageButton btk1, btk2, btk3, btk4, btk5;
+import java.util.ArrayList;
+
+import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.adapter.KalimantanAdapter;
+import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.model.Kalimantan;
+
+public class KalimantanActivity extends AppCompatActivity implements KalimantanAdapter.IHotelAdapter {
+    public static final String HOTEL = "hotel";
+    ArrayList<Kalimantan> mList = new ArrayList<>();
+    KalimantanAdapter mAdapter;
+    RecyclerView rvKalimantan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kalimantan);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         setTitle("Kalimantan");
 
-        btk1 = (ImageButton) findViewById(R.id.buttonK1);
-        btk2 = (ImageButton) findViewById(R.id.buttonK2);
-        btk3 = (ImageButton) findViewById(R.id.buttonK3);
-        btk4 = (ImageButton) findViewById(R.id.buttonK4);
-        btk5 = (ImageButton) findViewById(R.id.buttonK5);
+        rvKalimantan = (RecyclerView) findViewById(R.id.recycler_view_kalimantan);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        rvKalimantan.setLayoutManager(layoutManager);
+        mAdapter = new KalimantanAdapter(this, mList);
+        rvKalimantan.setAdapter(mAdapter);
 
-        btk1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.k1);
-                String desc = getResources().getString(R.string.kd1);
-                String loc = getResources().getString(R.string.kl1);
+        filData();
+    }
 
-                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
+    private void filData() {
+        Resources resources = getResources();
+        String[] arJudul = resources.getStringArray(R.array.placesKali);
+        String[] arDeskripsi = resources.getStringArray(R.array.place_descKali);
+        String[] arDetail = resources.getStringArray(R.array.place_detailsKali);
+        String[] arLokasi = resources.getStringArray(R.array.place_locationsKali);
+        TypedArray a = resources.obtainTypedArray(R.array.places_pictureKali);
+        String[] arFoto = new String[a.length()];
+        for (int i = 0; i < arFoto.length; i++) {
+            int id = a.getResourceId(i, 0);
+            arFoto[i] = ContentResolver.SCHEME_ANDROID_RESOURCE + "://"
+                    + resources.getResourcePackageName(id) + '/'
+                    + resources.getResourceTypeName(id) + '/'
+                    + resources.getResourceEntryName(id);
+        }
+        a.recycle();
 
-        btk2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.k2);
-                String desc = getResources().getString(R.string.kd2);
-                String loc = getResources().getString(R.string.kl2);
-
-                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
-
-        btk3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.k3);
-                String desc = getResources().getString(R.string.kd3);
-                String loc = getResources().getString(R.string.kl3);
-
-                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
-
-        btk4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.k4);
-                String desc = getResources().getString(R.string.kd4);
-                String loc = getResources().getString(R.string.kl4);
-
-                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
-
-        btk5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.k5);
-                String desc = getResources().getString(R.string.kd5);
-                String loc = getResources().getString(R.string.kl5);
-
-                Intent intent = new Intent(KalimantanActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
+        for (int i = 0; i < arJudul.length; i++) {
+            mList.add(new Kalimantan(arJudul[i], arDeskripsi[i], arDetail[i],
+                    arLokasi[i], arFoto[i]));
+        }
+        mAdapter.notifyDataSetChanged();
     }
 
     @Override
@@ -110,5 +68,12 @@ public class KalimantanActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void doClick(int pos) {
+        Intent intent = new Intent(this, DetailActivity1.class);
+        intent.putExtra(HOTEL, mList.get(pos));
+        startActivity(intent);
     }
 }

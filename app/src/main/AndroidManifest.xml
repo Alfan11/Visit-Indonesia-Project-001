@@ -23,7 +23,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SulawesiActivity" />
         <activity android:name=".JawaActivity" />
-        <activity android:name=".PapuaActivity"></activity>
+        <activity android:name=".PapuaActivity" />
+        <activity
+            android:name=".DetailActivity1"
+            android:label="@string/title_activity_detail1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailActivity2"
+            android:label="@string/title_activity_detail2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

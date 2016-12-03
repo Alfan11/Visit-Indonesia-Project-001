@@ -12,32 +12,32 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.R;
-import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.model.Sumatra;
+import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.model.Kalimantan;
 
 
-public class SumatraAdapter extends RecyclerView.Adapter<SumatraAdapter.ViewHolder> {
-    ArrayList<Sumatra> hotelList;
+public class KalimantanAdapter extends RecyclerView.Adapter<KalimantanAdapter.ViewHolder> {
+    ArrayList<Kalimantan> hotelList;
 
     IHotelAdapter mIHotelAdapter;
 
-    public SumatraAdapter(Context context, ArrayList<Sumatra> hotelList) {
+    public KalimantanAdapter(Context context, ArrayList<Kalimantan> hotelList) {
         this.hotelList = hotelList;
         mIHotelAdapter = (IHotelAdapter) context;
     }
 
     @Override
-    public SumatraAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public KalimantanAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_sumatra, parent, false);
         ViewHolder vh = new ViewHolder(v);
         return vh;
     }
 
     @Override
-    public void onBindViewHolder(SumatraAdapter.ViewHolder holder, int position) {
-        Sumatra sumatra = hotelList.get(position);
-        holder.tvJudul.setText(sumatra.judul);
-        holder.tvDeskripsi.setText(sumatra.deskripsi);
-        holder.ivFoto.setImageURI(Uri.parse(sumatra.foto));
+    public void onBindViewHolder(KalimantanAdapter.ViewHolder holder, int position) {
+        Kalimantan kalimantan = hotelList.get(position);
+        holder.tvJudul.setText(kalimantan.judul);
+        holder.tvDeskripsi.setText(kalimantan.deskripsi);
+        holder.ivFoto.setImageURI(Uri.parse(kalimantan.foto));
 
     }
 

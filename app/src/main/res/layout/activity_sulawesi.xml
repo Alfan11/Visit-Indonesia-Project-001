@@ -1,88 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_view_sulawesi"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/activity_sumatra"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.SulawesiActivity">
-        <!--1-->
-        <ImageButton
-            android:id="@+id/buttonU1"
-            android:layout_width="match_parent"
-            android:layout_height="175dp"
-            android:background="@drawable/u1"
-            android:contentDescription="@string/u1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/u1"
-            android:textAlignment="center" />
-        <!--2-->
-        <ImageButton
-            android:id="@+id/buttonU2"
-            android:layout_width="match_parent"
-            android:layout_height="175dp"
-            android:background="@drawable/u2"
-            android:contentDescription="@string/u2" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/u2"
-            android:textAlignment="center" />
-        <!--3-->
-        <ImageButton
-            android:id="@+id/buttonU3"
-            android:layout_width="match_parent"
-            android:layout_height="175dp"
-            android:background="@drawable/u3"
-            android:contentDescription="@string/u3" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/u3"
-            android:textAlignment="center" />
-        <!--4-->
-        <ImageButton
-            android:id="@+id/buttonU4"
-            android:layout_width="match_parent"
-            android:layout_height="175dp"
-            android:background="@drawable/u4"
-            android:contentDescription="@string/u4" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/u4"
-            android:textAlignment="center" />
-        <!--5-->
-        <ImageButton
-            android:id="@+id/buttonU5"
-            android:layout_width="match_parent"
-            android:layout_height="175dp"
-            android:background="@drawable/u5"
-            android:contentDescription="@string/u5" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/u5"
-            android:textAlignment="center" />
-    </LinearLayout>
-</ScrollView>
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:scrollbars="vertical" />

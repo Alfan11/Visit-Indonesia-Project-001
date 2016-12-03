@@ -1,106 +1,64 @@
 package id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001;
 
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 
-public class SulawesiActivity extends AppCompatActivity {
-    public static final String TITLE = "Title";
-    public static final String DESC = "Desc";
-    public static final String LOC = "Location";
-    ImageButton btu1, btu2, btu3, btu4, btu5;
+import java.util.ArrayList;
+
+import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.adapter.SulawesiAdapter;
+import id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.model.Sulawesi;
+
+public class SulawesiActivity extends AppCompatActivity implements SulawesiAdapter.IHotelAdapter {
+    public static final String HOTEL = "hotel";
+    ArrayList<Sulawesi> mList = new ArrayList<>();
+    SulawesiAdapter mAdapter;
+    RecyclerView rvSulawesi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sulawesi);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         setTitle("Sulawesi");
 
-        btu1 = (ImageButton) findViewById(R.id.buttonU1);
-        btu2 = (ImageButton) findViewById(R.id.buttonU2);
-        btu3 = (ImageButton) findViewById(R.id.buttonU3);
-        btu4 = (ImageButton) findViewById(R.id.buttonU4);
-        btu5 = (ImageButton) findViewById(R.id.buttonU5);
+        rvSulawesi = (RecyclerView) findViewById(R.id.recycler_view_sulawesi);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        rvSulawesi.setLayoutManager(layoutManager);
+        mAdapter = new SulawesiAdapter(this, mList);
+        rvSulawesi.setAdapter(mAdapter);
 
-        btu1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.u1);
-                String desc = getResources().getString(R.string.ud1);
-                String loc = getResources().getString(R.string.ul1);
+        filData();
+    }
 
-                Intent intent = new Intent(SulawesiActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
+    private void filData() {
+        Resources resources = getResources();
+        String[] arJudul = resources.getStringArray(R.array.placesSula);
+        String[] arDeskripsi = resources.getStringArray(R.array.place_descSula);
+        String[] arDetail = resources.getStringArray(R.array.place_detailsSula);
+        String[] arLokasi = resources.getStringArray(R.array.place_locationsSula);
+        TypedArray a = resources.obtainTypedArray(R.array.places_pictureSula);
+        String[] arFoto = new String[a.length()];
+        for (int i = 0; i < arFoto.length; i++) {
+            int id = a.getResourceId(i, 0);
+            arFoto[i] = ContentResolver.SCHEME_ANDROID_RESOURCE + "://"
+                    + resources.getResourcePackageName(id) + '/'
+                    + resources.getResourceTypeName(id) + '/'
+                    + resources.getResourceEntryName(id);
+        }
+        a.recycle();
 
-        btu2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.u2);
-                String desc = getResources().getString(R.string.ud2);
-                String loc = getResources().getString(R.string.ul2);
-
-                Intent intent = new Intent(SulawesiActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
-
-        btu3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.u3);
-                String desc = getResources().getString(R.string.ud3);
-                String loc = getResources().getString(R.string.ul3);
-
-                Intent intent = new Intent(SulawesiActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
-
-        btu4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.u4);
-                String desc = getResources().getString(R.string.ud4);
-                String loc = getResources().getString(R.string.ul4);
-
-                Intent intent = new Intent(SulawesiActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
-
-        btu5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String title = getResources().getString(R.string.u5);
-                String desc = getResources().getString(R.string.ud5);
-                String loc = getResources().getString(R.string.ul5);
-
-                Intent intent = new Intent(SulawesiActivity.this, DetailActivity.class);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                startActivity(intent);
-            }
-        });
+        for (int i = 0; i < arJudul.length; i++) {
+            mList.add(new Sulawesi(arJudul[i], arDeskripsi[i], arDetail[i],
+                    arLokasi[i], arFoto[i]));
+        }
+        mAdapter.notifyDataSetChanged();
     }
 
     @Override
@@ -110,5 +68,12 @@ public class SulawesiActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void doClick(int pos) {
+        Intent intent = new Intent(this, DetailActivity2.class);
+        intent.putExtra(HOTEL, mList.get(pos));
+        startActivity(intent);
     }
 }
