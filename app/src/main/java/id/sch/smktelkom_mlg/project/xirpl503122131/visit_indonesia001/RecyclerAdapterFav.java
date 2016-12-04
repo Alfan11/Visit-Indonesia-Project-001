@@ -1,7 +1,6 @@
 package id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,65 +32,19 @@ public class RecyclerAdapterFav extends RecyclerView.Adapter<RecyclerViewHolderF
             RecyclerViewHolderFav vholder = (RecyclerViewHolderFav) v.getTag();
             int position = vholder.getPosition();
             if (position == 0 && position < getItemCount()) {
-                String title = context.getResources().getString(R.string.j3);
-                String desc = context.getResources().getString(R.string.jd3);
-                String loc = context.getResources().getString(R.string.jl3);
 
-                Intent intent = new Intent(context, DetailActivity.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                context.startActivity(intent);
             }
             if (position == 1 && position < getItemCount()) {
-                String title = context.getResources().getString(R.string.u2);
-                String desc = context.getResources().getString(R.string.ud2);
-                String loc = context.getResources().getString(R.string.ul2);
-
-                Intent intent = new Intent(context, DetailActivity.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                context.startActivity(intent);
 
             }
             if (position == 2 && position < getItemCount()) {
-                String title = context.getResources().getString(R.string.j2);
-                String desc = context.getResources().getString(R.string.jd2);
-                String loc = context.getResources().getString(R.string.jl2);
 
-                Intent intent = new Intent(context, DetailActivity.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                context.startActivity(intent);
             }
             if (position == 3 && position < getItemCount()) {
-                String title = context.getResources().getString(R.string.p2);
-                String desc = context.getResources().getString(R.string.pd2);
-                String loc = context.getResources().getString(R.string.pl2);
 
-                Intent intent = new Intent(context, DetailActivity.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                context.startActivity(intent);
             }
             if (position == 4 && position < getItemCount()) {
-                String title = context.getResources().getString(R.string.j5);
-                String desc = context.getResources().getString(R.string.jd5);
-                String loc = context.getResources().getString(R.string.jl5);
 
-                Intent intent = new Intent(context, DetailActivity.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.putExtra(TITLE, title);
-                intent.putExtra(DESC, desc);
-                intent.putExtra(LOC, loc);
-                context.startActivity(intent);
             }
         }
     };
