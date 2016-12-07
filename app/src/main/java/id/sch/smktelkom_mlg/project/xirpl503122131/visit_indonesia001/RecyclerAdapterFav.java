@@ -1,6 +1,7 @@
 package id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +22,7 @@ public class RecyclerAdapterFav extends RecyclerView.Adapter<RecyclerViewHolderF
 
     String[] name = {"Kawah Ijen", "Bunaken", "Borobudur", "Raja Ampat", "Kepulauan Seribu"};
     String[] desc = {"Papua", "Sulawesi", "Yogyakarta", "Malang", "Pulau Komodo"};
-    int[] img = {R.drawable.j3, R.drawable.u2, R.drawable.j2, R.drawable.p2, R.drawable.j5};
+    int[] img = {R.drawable.j10, R.drawable.u7, R.drawable.j9, R.drawable.p2, R.drawable.j2};
     // menampilkan list item dalam bentuk text dengan tipe data string dengan variable name
 
     LayoutInflater inflater;
@@ -32,19 +33,29 @@ public class RecyclerAdapterFav extends RecyclerView.Adapter<RecyclerViewHolderF
             RecyclerViewHolderFav vholder = (RecyclerViewHolderFav) v.getTag();
             int position = vholder.getPosition();
             if (position == 0 && position < getItemCount()) {
-
+                Intent intent = new Intent(context, JawaActivity.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
             }
             if (position == 1 && position < getItemCount()) {
-
+                Intent intent = new Intent(context, SulawesiActivity.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
             }
             if (position == 2 && position < getItemCount()) {
-
+                Intent intent = new Intent(context, JawaActivity.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
             }
             if (position == 3 && position < getItemCount()) {
-
+                Intent intent = new Intent(context, PapuaActivity.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
             }
             if (position == 4 && position < getItemCount()) {
-
+                Intent intent = new Intent(context, JawaActivity.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
             }
         }
     };

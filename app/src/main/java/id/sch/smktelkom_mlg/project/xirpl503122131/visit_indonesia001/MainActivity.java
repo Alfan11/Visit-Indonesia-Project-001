@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupTabIcons() {
         int[] tabIcons = {
-                R.drawable.ic_favorite_black_24dp,
+                R.drawable.ic_home_black_24dp,
                 R.drawable.ic_flight_black_24dp,
                 R.drawable.ic_face_black_24dp
         };

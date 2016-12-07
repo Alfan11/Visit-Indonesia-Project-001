@@ -1,11 +1,13 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
     android:layout_width="match_parent"
     android:layout_height="900dp"
     android:orientation="vertical"
     tools:context="id.sch.smktelkom_mlg.project.xirpl503122131.visit_indonesia001.FavFragment">
 
     <LinearLayout
+        android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -44,7 +46,25 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:paddingTop="9dp"
-            android:text="@string/ind" />
+            android:text="@string/ind1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="9dp"
+            android:text="@string/ind2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="9dp"
+            android:text="@string/ind3" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -53,5 +73,4 @@
             android:scaleType="fitStart" />
 
     </LinearLayout>
-
 </ScrollView>

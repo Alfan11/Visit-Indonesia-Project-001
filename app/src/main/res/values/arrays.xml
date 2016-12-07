@@ -576,4 +576,78 @@
         <item>@drawable/p9</item>
         <item>@drawable/p10</item>
     </array>
+
+    <!--TOP5-->
+    <string-array name="placesTop">
+        <item>Kawah Ijen</item>
+        <item>Bunaken</item>
+        <item>Borobudur</item>
+        <item>Raja Ampat</item>
+        <item>Kepulauan Seribu</item>
+    </string-array>
+    <string-array name="place_descTop">
+        <item>Kawah</item>
+        <item>Laut</item>
+        <item>Candi</item>
+        <item>Kepulauan</item>
+        <item>Kepulauan</item>
+    </string-array>
+    <string-array name="place_detailsTop">
+        <item>
+                Kawah Ijen adalah sebuah danau kawah yang bersifat asam yang berada di puncak
+		        Gunung Ijen dengan tinggi 2.443 meter di atas permukaan laut dengan kedalaman danau
+		        200 meter dan luas kawah mencapai 5.466 Hektar. Danau kawah Ijen dikenal merupakan
+		        danau air sangat asam terbesar di dunia. Kawah Ijen berada dalam wilayah Cagar Alam
+		        Taman Wisata Ijen Kabupaten Bondowoso dan Kabupaten Banyuwangi, Jawa Timur. Setiap
+		        dini hari sekitar pukul 02.00 hingga 04.00, di sekitar kawah dapat dijumpai fenomena
+		        blue fire atau api biru, yang merupakan keunikan tempat ini, karena pemandangan
+		        alami ini hanya terjadi di dua tempat di dunia yaitu Islandia dan Ijen. Dari Kawah
+		        Ijen, kita dapat melihat pemandangan gunung lain yang ada di kompleks Pegunungan Ijen,
+		        di antaranya adalah puncak Gunung Merapi yang berada di timur Kawah Ijen,
+		        Gunung Raung, Gunung Suket, Gunung Rante, dan sebagainya.
+        </item>
+        <item>
+            Bunaken terletak di Teluk Manado. Taman laut Bunaken memiliki 20 titik penyelaman (dive spot) dengan kedalaman bervariasi
+		hingga 1.344 meter. Dari 20 titik selam itu, 12 titik selam di antaranya berada di sekitar Pulau Bunaken. Dua belas titik
+		penyelaman inilah yang paling kerap dikunjungi penyelam dan pecinta keindahan pemandangan bawah laut. Sebagian besar dari
+		12 titik penyelaman di Pulau Bunaken berjajar dari bagian tenggara hingga bagian barat laut pulau tersebut. Di wilayah
+		inilah terdapat underwater great walls, yang disebut juga hanging walls, atau dinding-dinding karang raksasa yang berdiri
+		vertikal dan melengkung ke atas. Dinding karang ini juga menjadi sumber makanan bagi ikan-ikan di perairan sekitar Pulau Bunaken.
+		Penginapan terkenal yakni Raja Laut Dive Resort, Bunaken Island Resort, Bastianos Dive Resort
+        </item>
+        <item>
+            Borobudur adalah salah satu dari keajaiban dunia. candi satu ini sangat
+            banyak dikunjungi oleh wisatawan. Candi ini banyak meyimpan cerit - cerita sejarah jaman dahulu.
+        </item>
+        <item>
+            Kepulauan Raja Ampat merupakan rangkaian empat gugusan pulau yang
+		berdekatan dan berlokasi di barat bagian Kepala Burung (Vogelkoop) Pulau Papua.
+		Secara administrasi, gugusan ini berada di bawah Kabupaten Raja Ampat, Provinsi
+		Papua Barat. Kepulauan ini sekarang menjadi tujuan para penyelam yang tertarik
+		akan keindahan pemandangan bawah lautnya. Empat gugusan pulau yang menjadi
+		anggotanya dinamakan menurut empat pulau
+		terbesarnya, yaitu Pulau Waigeo, Pulau Misool, Pulau Salawati, dan Pulau Batanta.
+        </item>
+        <item>
+            Kabupaten Administrasi Kepulauan Seribu adalah sebuah kabupaten administrasi di Daerah
+            Khusus Ibukota Jakarta, Indonesia. Wilayahnya meliputi gugusan kepulauan berjumlah ± 110 Pulau
+            dan ±200 Gosong Karang. Letaknya berada di Utara Teluk Jakarta
+        </item>
+    </string-array>
+    <string-array name="place_locationsTop">
+        <item>Perbatasan antara Kabupaten Banyuwangi dan
+		    Kabupaten Bondowoso, Jawa Timur, Indonesia
+        </item>
+        <item>Manado</item>
+        <item>Jawa Tengah</item>
+        <item>Kabupaten Raja Ampat, Provinsi Papua Barat</item>
+        <item>Jakarta</item>
+    </string-array>
+    <array name="places_pictureTop">
+        <item>@drawable/j1</item>
+        <item>@drawable/u7</item>
+        <item>@drawable/j9</item>
+        <item>@drawable/p2</item>
+        <item>@drawable/j2</item>
+    </array>
 </resources>

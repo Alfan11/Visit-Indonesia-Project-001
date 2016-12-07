@@ -5,21 +5,31 @@
 
     <string name="thanks">ALLAH SWT | RASULULLAH SWT || PRESIDEN RI || PAK HENDRA || KEDUA ORANG TUA</string>
 
-    <string name="ind">
-            Republik Indonesia (RI), biasa disebut Indonesia, adalah negara di Asia
-        Tenggara yang dilintasi garis khatulistiwa dan berada di antara benua Asia
-        dan Australia serta antara Samudra Pasifik dan Samudra Hindia. Indonesia
-        adalah negara kepulauan terbesar di dunia yang terdiri dari 13.466 pulau,[6]
-        nama alternatif yang biasa dipakai adalah Nusantara.[7] Dengan populasi lebih
-        dari 258 juta jiwa pada tahun 2016,[8] Indonesia adalah negara berpenduduk
-        terbesar keempat di dunia dan negara yang berpenduduk Muslim terbesar di dunia,
-        dengan lebih dari 207 juta jiwa.[9] Bentuk pemerintahan Indonesia adalah republik,
-        dengan Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah dan Presiden yang
-        dipilih secara langsung.
-        Ibu kota negara Indonesia ialah Jakarta. Indonesia berbatasan darat dengan
-        Malaysia di Pulau Kalimantan, dengan Papua Nugini di Pulau Papua dan dengan
-        Timor Leste di Pulau Timor. Negara tetangga lainnya adalah Singapura, Filipina,
-        Australia, dan wilayah persatuan Kepulauan Andaman dan Nikobar di India.
+    <string name="ind1">
+            Pariwisata di Indonesia merupakan sektor ekonomi penting di Indonesia.
+        Pada tahun 2009, pariwisata menempati urutan ketiga dalam hal penerimaan
+        devisa setelah komoditi minyak dan gas bumi serta minyak kelapa sawit.
+        Berdasarkan data tahun 2014, jumlah wisatawan mancanegara yang datang ke
+        Indonesia sebesar 9,4 juta lebih atau tumbuh sebesar 7.05% dibandingkan tahun sebelumnya.
+    </string>
+    <string name="ind2">
+        Kekayaan alam dan budaya merupakan komponen penting dalam pariwisata di Indonesia.
+        Alam Indonesia memiliki kombinasi iklim tropis, 17.508 pulau yang 6.000 di antaranya tidak dihuni,
+        serta garis pantai terpanjang ketiga di dunia setelah Kanada dan Uni Eropa.
+        Indonesia juga merupakan negara kepulauan terbesar dan berpenduduk terbanyak di dunia.
+        Pantai-pantai di Bali, tempat menyelam di Bunaken, Gunung Rinjani di Lombok, dan berbagai
+        taman nasional di Sumatera merupakan contoh tujuan wisata alam di Indonesia. Tempat-tempat
+        wisata itu didukung dengan warisan budaya yang kaya yang mencerminkan sejarah dan keberagaman
+        etnis Indonesia yang dinamis dengan 719 bahasa daerah yang dituturkan di seluruh kepulauan tersebut.
+        Candi Prambanan dan Borobudur, Toraja, Yogyakarta, Minangkabau, dan Bali merupakan contoh
+        tujuan wisata budaya di Indonesia. Hingga 2010, terdapat 7 lokasi di Indonesia yang telah
+        ditetapkan oleh UNESCO yang masuk dalam daftar Situs Warisan Dunia. Sementara itu, empat wakil
+        lain juga ditetapkan UNESCO dalam Daftar Representatif Budaya Takbenda Warisan Manusia yaitu wayang,
+        keris, batik dan angklung.
+    </string>
+    <string name="ind3">
+        Pengelolaan kepariwisataan, kebijakan nasional, urusan pemerintahan di bidang
+        kebudayaan dan kepariwisataan di Indonesia diatur oleh Kementerian Kebudayaan dan Pariwisata Indonesia.
     </string>
 
     <!-- TODO: Remove or change this placeholder text -->
